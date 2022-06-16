@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    position: fixed;
+    width:100%;
+}
+
+.card{
+    position: static;
+}
+#footer, .be{
+    background:#000066 !important;
+    width: 100%;
+    color: aliceblue;
+}
+#footer ul,li{
+    list-style: none;
+}
+#footer p{
+    opacity: 0.5;
+}
+
+.be{
+    height: 50vh;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API</title>
+</head>
+<body style="background-color: #e3f2fd;">
+    <div class="head mb-5">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">JSON</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; ">
+                     <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                     </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+
+    <section id="first">
+        <div class="container-fluid">
+            <div class="mas">
+                <img src="img/j3.jpg" class="h-100"alt="" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <div class="about">
+        <div class="container-fluid px-5 be">
+            <figcaption class="text-center  py-4 mb-4 fs-3 fw-bolder">JSON PLACEHOLDER API</figcaption>
+            <p>JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).</p>
+            <p class="mb-5">A JSON string can be stored in its own file, which is basically just a text file with an extension of .json, and a MIME type of application/json.</p>
+        </div>
+    </div>
+
+    <div class="top-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">JSON CARD</h2>
+            <div class="row col-md-5">
+                
+                <form action="" id="post-form">
+                    <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label" >Post Title</label>
+                            <input type="text" class="form-control" id="title"
+                            placeholder="enter a title" >
+                    </div>
+                    <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Post Body</label>
+                            <textarea class="form-control" id="body" rows="3"placeholder="enter a comment" ></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-primary" type="submit">Create Post</button>
+                     </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card-section mt-5">
+        <div class="container">
+            <div class="row" id="post-holder">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>4</p>
+                            <h6 id="post-title">post title</h6>
+                            <p id="post-body">ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"</p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="footer">
+        <div class="container mt-5">
+            <div class="row mt-5 py-5 ms-4">
+                <div class=" col-lg-2 col-md-12">
+                    <p class="ms-4 me-2">GET CONNECTED</p>
+                    <ul>
+                        <li>Connectivity</li>
+                        <li>Dashboard</li>
+                        <li>IoT SIM Card</li>
+                        <li>Hologram Hyper</li>
+                        <li>Hologram Nova</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-3">
+                    <p >RESOURCES</p>
+                    <li>Using Hologram</li>
+                    <li> Docs</li>
+                    <li> Support</li>
+                    <li>Support Hardware</li>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-3">
+                    <p>PRICING</p>
+                    <li>Pricing Overview</li>
+                    <li>Flexible Data</li>
+                    <li>Enterprise</li>
+                    <li>Coverage Map</li>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-3">
+                    <p>DEVELOPERS</p>
+                    <li>Forum</li>
+                    <li>Projects</li>
+                    <li>GitHub</li>
+                    <li>Open Source</li>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-3">
+                    <p>COMPANY</p>
+                    <li>About us</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-3">
+                    <p>SOCIAL</p>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Linkedln</li>
+                    <li>GitHub</li>
+                </div>
+            </div>
+            <div class="col text-right ms-5">
+                <p>@copyright Jaybee</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
