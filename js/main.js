@@ -9,7 +9,7 @@ function renderJB (arr) {
     let postHolder = '';
     arr.forEach(post => {
         postHolder += `
-            <div class="col-md-4 mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
                 <div class="card h-100">
                     <div class="card-body">
                         <p>${post.id}</p>

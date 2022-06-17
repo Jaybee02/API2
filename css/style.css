@@ -25,9 +25,14 @@
 }
 
 .be{
-    height: 50vh;
+    height: 80vh;
 }
 
 .kt{
     margin-top: 70px!important;
+}
+@media (min-width:320px) and (max-width:376px){
+    .about p {
+        font-size: 8px!important
+    }
 }
