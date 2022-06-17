@@ -64,14 +64,14 @@ function createPost(e) {
             'Content-type': 'application/json'
         }
     })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data)
-            postArr.unshift(data);
-            console.log(postArr)
-            let postHolder = '';
-            renderJB(postArr)
-        })
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data)
+        postArr.unshift(data);
+        console.log(postArr)
+        let postHolder = '';
+        renderJB(postArr)
+    })
 }
 
 //END CREATE POST//
@@ -94,32 +94,32 @@ function updatePost(id) {
             'Content-type': 'application/json; charset=UTF-8',
         },
     })
-        .then((response) => response.json())
-        .then((data) => {
+    .then((response) => response.json())
+    .then((data) => {
 
-            console.log(data)
-            let postTitles = document.querySelectorAll('.post-title') 
-            let postBodies = document.querySelectorAll('.post-body')
-            console.log(postTitles)
-            postTitles.forEach((postTitle, index) => {
-                if (index + 1 === id) {
-                    if (data.title !== "") {
-                        postTitle.innerHTML = data.title
-                    }
+        console.log(data)
+        let postTitles = document.querySelectorAll('.post-title') 
+        let postBodies = document.querySelectorAll('.post-body')
+        console.log(postTitles)
+        postTitles.forEach((postTitle, index) => {
+            if (index + 1 === id) {
+                if(data.title !== "") {
+                    postTitle.innerHTML = data.title
                 }
+            }
 
-            })
+        })
 
-            postBodies.forEach((postBody, index) => {
-                if (index + 1 === id) {
-                    if (data.body !== "") {
-                        postBody.innerHTML = data.body
-                    }
+        postBodies.forEach((postBody, index) => {
+            if (index + 1 === id) {
+                if (data.body !== "") {
+                    postBody.innerHTML = data.body
                 }
+            }
 
-            })
+        })
 
-        });
+    });
 }
 
 //END UPDATE POST//
