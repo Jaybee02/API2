@@ -35,7 +35,7 @@ function getPosts() {
     .then((response) => response.json())
     .then((data) => {
         console.log(postArr)
-        postArr = data.slice(0,12)
+        postArr = data.slice(0,21)
         renderJB(postArr)
     })
 
